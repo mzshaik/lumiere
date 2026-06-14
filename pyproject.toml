@@ -1,0 +1,30 @@
+[project]
+name = "lumiere"
+version = "2.0.0"
+description = "Cinema Intelligence Platform — discover, compare, and analyze movies with TMDB + Rotten Tomatoes ratings"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Mohammed Zubair Shaik", email = "mohammedzubairshaik@outlook.com"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.28.0",
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "tqdm>=4.64.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.0.0",
+    "jinja2>=3.0.0",
+    "flask>=3.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/mzshaik/lumiere"
+
+[build-system]
+requires = ["setuptools>=45"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

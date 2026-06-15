@@ -46,9 +46,15 @@ class TMDBClient:
         if min_rating is not None:
             params["vote_average.gte"] = min_rating
         if year_start:
-            params["primary_release_date.gte"] = year_start
+            if len(year_start) == 4 and year_start.isdigit():
+                params["primary_release_date.gte"] = f"{year_start}-01-01"
+            else:
+                params["primary_release_date.gte"] = year_start
         if year_end:
-            params["primary_release_date.lte"] = year_end
+            if len(year_end) == 4 and year_end.isdigit():
+                params["primary_release_date.lte"] = f"{year_end}-12-31"
+            else:
+                params["primary_release_date.lte"] = year_end
         if genre_ids:
             params["with_genres"] = ",".join(str(g) for g in genre_ids)
 

@@ -75,4 +75,4 @@
 
 ---
 
-*Built with Lumiere by Mohammed Zubair Shaik*
+*Built with Lumiere by Mohammed Shaik*

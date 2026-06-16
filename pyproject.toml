@@ -5,7 +5,7 @@ description = "Cinema Intelligence Platform — discover, compare, and analyze m
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Mohammed Zubair Shaik", email = "mohammedzubairshaik@outlook.com"}
+    {name = "Mohammed Shaik", email = "mzshaik@users.noreply.github.com"}
 ]
 requires-python = ">=3.9"
 dependencies = [
